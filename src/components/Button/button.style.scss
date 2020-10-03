@@ -1,0 +1,22 @@
+a.custom-button {
+	padding: 5px 20px;
+	border: 2px solid var(--red);
+	border-radius: 20px;
+	color: var(--red);
+	text-align: center;
+	white-space: nowrap;
+
+	&.background {
+		background-color: var(--red);
+		color: white;
+	}
+
+	&.block {
+		display: block;
+	}
+
+	&.change-color {
+		border: 2px solid white;
+		color: white;
+	}
+}

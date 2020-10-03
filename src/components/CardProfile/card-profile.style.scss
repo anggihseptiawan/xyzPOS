@@ -1,0 +1,21 @@
+.card-profile {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	.img-user {
+		margin-right: 10px;
+	}
+
+	.profile {
+		p {
+			font-weight: bold;
+			margin: 0;
+		}
+
+		span {
+			display: block;
+			word-break: break-all;
+		}
+	}
+}

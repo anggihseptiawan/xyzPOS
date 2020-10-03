@@ -1,0 +1,22 @@
+.sidebar {
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	box-shadow: 0px 0px 8px rgba($color: #000000, $alpha: 0.2);
+	padding: 60px 20px;
+	width: 23%;
+	background: white;
+	transition: transform 0.4s ease-in-out;
+
+	&.hide {
+		transform: translateX(-100%);
+	}
+}
+
+@media (max-width: 576px) {
+	.sidebar {
+		width: 250px;
+	}
+}

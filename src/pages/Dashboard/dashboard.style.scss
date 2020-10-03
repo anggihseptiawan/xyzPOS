@@ -1,0 +1,17 @@
+.close {
+	position: fixed;
+	top: 5px;
+	left: 20px;
+	z-index: 10;
+	cursor: pointer;
+
+	span {
+		font-size: 30px;
+		font-weight: bold;
+	}
+}
+
+.dashboard-page {
+	position: relative;
+	width: 100%;
+}

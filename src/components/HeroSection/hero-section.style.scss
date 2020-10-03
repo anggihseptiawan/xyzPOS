@@ -1,0 +1,47 @@
+.hero-wrapper {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+
+	.description {
+		flex: 1;
+		h1 {
+			span {
+				color: var(--red);
+			}
+		}
+
+		.cta {
+			display: flex;
+			flex-direction: column;
+
+			a {
+				width: 180px;
+				text-align: center;
+				margin-bottom: 12px;
+			}
+		}
+	}
+
+	.hero-image {
+		flex: 1;
+
+		svg {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.hero-wrapper {
+		flex-direction: column;
+		margin-top: 90px;
+
+		.hero-image {
+			margin-top: 20px;
+			svg {
+				height: auto;
+			}
+		}
+	}
+}
