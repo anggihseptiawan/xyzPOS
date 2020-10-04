@@ -6,7 +6,7 @@ Frontend assesment test from flick.
 
 ### Easy access 🔥
 
-You can easily access this project [in this link](https://xyzpos.netlify.app)
+You can easily access this project [in this link](https://xyz-pos.vercel.app/)
 
 ### Struktur folder di dalam src
 
