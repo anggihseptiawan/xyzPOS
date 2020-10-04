@@ -3,12 +3,27 @@ import React from "react";
 import "./main-dashboard.style.scss";
 import Panel from "../Panel/panel";
 import Table from "../Table/table";
+import { useSelector } from "react-redux";
 
 const MainDashboard = ({ expand }) => {
+	const globalState = useSelector((state) => state);
+
+	const GetName = () => {
+		const setName = globalState.currentUser.email.split("@");
+		return setName[0];
+	};
+
 	return (
 		<div className={`main-content ${expand ? "expand" : ""}`}>
 			<p>Dashboard</p>
-			<h2>Hallo Ahmad</h2>
+			<h2>
+				Hallo,{" "}
+				{globalState.currentUser.nama ? (
+					globalState.currentUser.nama
+				) : (
+					<GetName />
+				)}
+			</h2>
 			<div className="panel-info">
 				<Panel />
 			</div>

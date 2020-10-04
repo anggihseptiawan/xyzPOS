@@ -23,18 +23,75 @@ const ModalBox = ({ type }) => {
 		password: "",
 	});
 
+	const validateEmail = (mail) => {
+		if (
+			/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+				mail
+			)
+		) {
+			return true;
+		} else {
+			alert("Format email salah..");
+			return false;
+		}
+	};
+
 	const handleClick = () => {
-		dispatch({ type: "SIGN_IN", value: form });
-		setLoading(true);
-		setTimeout(() => {
-			history.push("/dashboard");
-			setLoading(false);
-		}, 3000);
+		if (type === "signin") {
+			if (form.email !== "" && form.password !== "") {
+				if (form.password.length >= 8 && form.password.length <= 20) {
+					if (validateEmail(form.email)) {
+						dispatch({ type: "SIGN_IN", value: form });
+						setLoading(true);
+						setTimeout(() => {
+							history.push("/dashboard");
+							setLoading(false);
+						}, 3000);
+					} else {
+						return;
+					}
+				} else {
+					alert(
+						"Panjang karakter password minimal 8 dan maksimal 20"
+					);
+				}
+			} else {
+				alert("Input field required");
+			}
+		} else if (type === "signup") {
+			if (form.nama !== "" && form.email !== "" && form.password !== "") {
+				if (form.nama.length >= 10) {
+					if (
+						form.password.length >= 8 &&
+						form.password.length <= 20
+					) {
+						if (validateEmail(form.email)) {
+							dispatch({ type: "SIGN_IN", value: form });
+							setLoading(true);
+							setTimeout(() => {
+								history.push("/dashboard");
+								setLoading(false);
+							}, 3000);
+						} else {
+							return;
+						}
+					} else {
+						alert(
+							"Panjang karakter password minimal 8 dan maksimal 20"
+						);
+					}
+				} else {
+					alert("Nama minimal 10 karakter..");
+				}
+			} else {
+				alert("Input field required");
+			}
+		}
 	};
 
 	const ButtonText = () => {
 		if (loading) {
-			return "Loading";
+			return "Loading..";
 		} else if (type === "signin") {
 			return "Masuk";
 		} else if (type === "signup") {
@@ -93,7 +150,7 @@ const ModalBox = ({ type }) => {
 									btnBlock
 									handleClick={handleClick}
 								>
-									{ButtonText()}
+									{<ButtonText />}
 								</Button>
 							</form>
 

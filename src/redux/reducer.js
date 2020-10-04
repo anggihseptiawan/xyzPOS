@@ -10,6 +10,12 @@ const reducer = (state = intialState, action) => {
 				currentUser: action.value,
 			};
 
+		case "SIGN_OUT":
+			return {
+				...state,
+				currentUser: action.value,
+			};
+
 		default:
 			return state;
 	}
