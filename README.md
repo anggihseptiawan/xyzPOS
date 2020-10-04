@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Frontend assesment test from flick.
 
-### Easy access this project 🔥
+### Easy access 🔥
 
 You can easily access this project [in this link](https://xyzpos.netlify.app)
 
