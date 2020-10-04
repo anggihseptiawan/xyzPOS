@@ -1,0 +1,40 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"jam": "09:30",
+			"customer": "Budi Cahyadi",
+			"barang": "Kipas Angin",
+			"harga": 30000,
+			"qty": 2,
+			"total": 600000
+		},
+		{
+			"id": 2,
+			"jam": "15:40",
+			"customer": "Ahmad Budi",
+			"barang": "Kipas Tangan",
+			"harga": 3000,
+			"qty": 2,
+			"total": 60000
+		},
+		{
+			"id": 3,
+			"jam": "02:15",
+			"customer": "Yulia",
+			"barang": "Jam Tangan",
+			"harga": 30000,
+			"qty": 1,
+			"total": 30000
+		},
+		{
+			"id": 4,
+			"jam": "23:05",
+			"customer": "Evelyn",
+			"barang": "Keranjang",
+			"harga": 30000,
+			"qty": 1,
+			"total": 23000
+		}
+	]
+}

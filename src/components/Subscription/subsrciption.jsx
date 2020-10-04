@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CardProduct from "../CardProduct/card-product";
 import { DataProduct } from "../../assets/data";
 
 import "./subscription.style.scss";
 
 const Subscription = () => {
-	const { data } = DataProduct;
+	const [data, setData] = useState([]);
+
+	useEffect(() => {
+		// Simulasi pemanggilan API
+
+		setData(DataProduct.data);
+	}, []);
 
 	return (
 		<div className="subscription-wrapper">

@@ -20,7 +20,7 @@ const CardProduct = ({ category, price, features, isBestSeller }) => {
 				<div className="features">
 					{features.map((feature) => {
 						return (
-							<div className="feature">
+							<div className="feature" key={feature.id}>
 								<Item />
 								<span>{feature}</span>
 							</div>

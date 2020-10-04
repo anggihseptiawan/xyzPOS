@@ -11,9 +11,6 @@ const MainDashboard = ({ expand }) => {
 			<h2>Hallo Ahmad</h2>
 			<div className="panel-info">
 				<Panel />
-				<Panel />
-				<Panel />
-				<Panel />
 			</div>
 
 			<div className="reporting">

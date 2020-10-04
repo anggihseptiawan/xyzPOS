@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../Button/button";
 
 import "./table.style.scss";
+import { ReportData } from "../../assets/data";
 
 const Table = () => {
+	const [reporting, setReporting] = useState([]);
+
+	useEffect(() => {
+		// Simulasi pemanggilan API
+
+		setReporting(ReportData.data);
+	}, []);
+
 	return (
 		<table>
 			<thead>
@@ -18,28 +27,30 @@ const Table = () => {
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>09:21</td>
-					<td>Budi Cahyadi</td>
-					<td>Kipas Angin</td>
-					<td>Rp. 100.000</td>
-					<td>2</td>
-					<td>Rp. 200.000</td>
-					<td>
-						<Button hasBackground>Lihat detail</Button>
-					</td>
-				</tr>
-				<tr>
-					<td>15:30</td>
-					<td>Ahmad Budi</td>
-					<td>Sapu ijuk</td>
-					<td>Rp. 10.000</td>
-					<td>1</td>
-					<td>Rp. 10.000</td>
-					<td>
-						<Button hasBackground>Lihat detail</Button>
-					</td>
-				</tr>
+				{reporting.map((item) => {
+					const {
+						id,
+						jam,
+						customer,
+						barang,
+						harga,
+						qty,
+						total,
+					} = item;
+					return (
+						<tr key={id}>
+							<td>{jam}</td>
+							<td>{customer}</td>
+							<td>{barang}</td>
+							<td>{harga}</td>
+							<td>{qty}</td>
+							<td>{total}</td>
+							<td>
+								<Button hasBackground>Lihat detail</Button>
+							</td>
+						</tr>
+					);
+				})}
 			</tbody>
 		</table>
 	);

@@ -5,7 +5,7 @@ import { ReactComponent as PasswordIcon } from "../../assets/images/password-24p
 
 import "./form-input.style.scss";
 
-const FormInput = ({ type, placeholder }) => {
+const FormInput = ({ type, placeholder, handleChange }) => {
 	const Icon = () => {
 		if (placeholder === "Nama") {
 			return <UserIcon />;
@@ -18,7 +18,11 @@ const FormInput = ({ type, placeholder }) => {
 
 	return (
 		<div className="input-wrapper">
-			<input type={type} placeholder={placeholder} />
+			<input
+				type={type}
+				placeholder={placeholder}
+				onChange={handleChange}
+			/>
 			<div className="icon">
 				<Icon />
 			</div>

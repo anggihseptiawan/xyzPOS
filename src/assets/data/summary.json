@@ -1,0 +1,24 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"category": "Masa Berlaku Langganan",
+			"value": "15 Juli 2020"
+		},
+		{
+			"id": 2,
+			"category": "Total Produk",
+			"value": 500
+		},
+		{
+			"id": 3,
+			"category": "Produk Terjual",
+			"value": 1000
+		},
+		{
+			"id": 4,
+			"category": "Total Keuntungan",
+			"value": 15000000
+		}
+	]
+}

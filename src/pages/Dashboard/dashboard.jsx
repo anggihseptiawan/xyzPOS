@@ -9,7 +9,7 @@ const Dashboard = () => {
 
 	return (
 		<>
-			<div className="close" onClick={() => setHidden(!hidden)}>
+			<div className="closeBtn" onClick={() => setHidden(!hidden)}>
 				<span className="text-red">&times;</span>
 			</div>
 			<div className="dashboard-page">
