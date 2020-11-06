@@ -11,6 +11,7 @@ const Button = ({
 	return (
 		<a
 			href="#"
+			rel="noopener noreferer"
 			className={`custom-button ${hasBackground ? "background" : ""} ${
 				btnBlock ? "block" : ""
 			} ${changeColor ? "change-color" : ""}`}

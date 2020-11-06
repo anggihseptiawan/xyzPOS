@@ -27,10 +27,10 @@ const Navbar = () => {
 					</a>
 				</div>
 				<div className="nav-menu">
-					<a href="#" className="link">
+					<a href="#" rel="noopener noreferer" className="link">
 						Fitur
 					</a>
-					<a href="#" className="link">
+					<a href="#" rel="noopener noreferer" className="link">
 						Berlangganan
 					</a>
 					{color ? (

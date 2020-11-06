@@ -14,9 +14,6 @@ const ModalBox = ({ type }) => {
 	const dispatch = useDispatch();
 	const history = useHistory();
 
-	const globalState = useSelector((state) => state);
-	console.log(globalState);
-
 	const [form, setForm] = useForm({
 		nama: "",
 		email: "",
