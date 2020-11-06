@@ -2,8 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### xyzPOS by Anggih Septiawan ⚡
 
-Frontend assesment test from flick.
-
 ### Easy access 🔥
 
 You can easily access this project [in this link](https://xyz-pos.vercel.app/)
@@ -39,4 +37,3 @@ You can easily access this project [in this link](https://xyz-pos.vercel.app/)
 1. Modalbox lancar pada pemanggilan pertama, pemanggilan kedua dan seterusnya harus di klik dua kali
 2. Tidak bisa berpindah antar dialog (login ke register begitu juga sebaliknya)
 
-### Big Thanks to flick team for this chance 🔥🙏
