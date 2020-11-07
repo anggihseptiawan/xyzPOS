@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 
 function App() {
 	const globalState = useSelector((state) => state);
-	console.log(globalState.currentUser);
 
 	return (
 		<Switch>
